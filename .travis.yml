@@ -4,8 +4,8 @@ language: r
 r:
   - release
   - devel
-sudo: required
-cache: packages
+# sudo: required
+# cache: packages
 
 before_install:
   - cd mallet
