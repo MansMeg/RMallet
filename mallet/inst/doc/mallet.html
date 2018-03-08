@@ -72,11 +72,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h4 class="author"><em>David Mimno, Måns Magnusson</em></h4>
 <h4 class="date"><em>2016-10-28</em></h4>
 
-
-
 <div id="installation" class="section level2">
 <h2>Installation</h2>
 <p>The <code>mallet</code> R package is available on CRAN. To install, simply use <code>install.packages()</code></p>
+  
+
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;mallet&quot;</span>)</code></pre></div>
 <p>To load the package, simply use <code>library()</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(mallet)</code></pre></div>
@@ -110,6 +110,7 @@ sotu.instances.short &lt;-<span class="st"> </span>
                 <span class="dt">stoplist =</span> stop_vector)</code></pre></div>
 <p>To fit a model we first need to create a topic trainer object.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">topic.model &lt;-<span class="st"> </span><span class="kw">MalletLDA</span>(<span class="dt">num.topics=</span><span class="dv">10</span>, <span class="dt">alpha.sum =</span> <span class="dv">1</span>, <span class="dt">beta =</span> <span class="fl">0.1</span>)</code></pre></div>
+  
 <p>Load our documents. We could also pass in the filename of a saved instance list file that we build from the command-line tools.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">topic.model$<span class="kw">loadDocuments</span>(sotu.instances)</code></pre></div>
 <p>Get the vocabulary, and some statistics about word frequencies. These may be useful in further curating the stopword list.</p>
@@ -136,6 +137,7 @@ sotu.instances.short &lt;-<span class="st"> </span>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">doc.topics &lt;-<span class="st"> </span><span class="kw">mallet.doc.topics</span>(topic.model, <span class="dt">smoothed=</span><span class="ot">TRUE</span>, <span class="dt">normalized=</span><span class="ot">TRUE</span>)
 topic.words &lt;-<span class="st"> </span><span class="kw">mallet.topic.words</span>(topic.model, <span class="dt">smoothed=</span><span class="ot">TRUE</span>, <span class="dt">normalized=</span><span class="ot">TRUE</span>)</code></pre></div>
 <p>What are the top words in topic 2? Notice that R indexes from 1 and Java from 0, so this will be the topic that mallet called topic 1.</p>
+
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mallet.top.words</span>(topic.model, <span class="dt">word.weights =</span> topic.words[<span class="dv">2</span>,], <span class="dt">num.top.words =</span> <span class="dv">5</span>)</code></pre></div>
 <pre><code>##        words    weights
 ## 1   congress 0.04345107
@@ -171,6 +173,7 @@ doc.topics.counts[<span class="dv">1</span>:<span class="dv">3</span>, <span cla
 ## [1,]    3    0    0    0    0    0    0    0    1     0
 ## [2,]    0    0    1    0    0    0    0    0   19     0
 ## [3,]    1    0    7    0    0    0    3    0   30     0</code></pre>
+
 </div>
 
 
