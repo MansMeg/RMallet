@@ -30,4 +30,3 @@ In the example below, I make a call directly to the
 \code{topic.model$setAlphaOptimization(20, 50)} java method, 
 which passes this update to the model itself.
 }
-

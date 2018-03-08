@@ -38,4 +38,3 @@ nips.topic.words <-
 \seealso{
 \code{\link{mallet.topic.words}}
 }
-

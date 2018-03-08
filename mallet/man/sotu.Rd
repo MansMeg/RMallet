@@ -20,4 +20,3 @@ sotu
 A dataset containing State of the Union Adresses by paragraph from 1790 to 2009.
 }
 \keyword{datasets}
-

@@ -27,10 +27,9 @@ mallet.instances <-
 }
 
 }
-\author{
-Dan Bowen
-}
 \seealso{
 \code{\link{mallet.import}}
 }
-
+\author{
+Dan Bowen
+}

@@ -41,9 +41,6 @@ Reports on topic words:
 Clustering of topics: 
 \code{\link{mallet.topic.hclust}}
 }
-\author{
-Maintainer: David Mimno
-}
 \references{
 The model, Latent Dirichlet allocation (LDA):
 \cite{David M Blei, Andrew Ng, Michael Jordan. Latent Dirichlet Allocation. J. of Machine Learning Research, 2003.}
@@ -57,4 +54,6 @@ Details of the fast sparse Gibbs sampling algorithm:
 Hyperparameter optimization:
 \cite{Hanna Wallach, David Mimno, Andrew McCallum. Rethinking LDA: Why Priors Matter. NIPS, 2010.}
 }
-
+\author{
+Maintainer: David Mimno
+}

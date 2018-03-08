@@ -21,4 +21,3 @@ most probable words in that topic separated by spaces.
 \code{\link{mallet.topic.words}} produces topic-word weights. 
 \code{\link{mallet.top.words}} produces a data frame for a single topic.
 }
-

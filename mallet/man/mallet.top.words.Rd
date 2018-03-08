@@ -19,4 +19,3 @@ This function returns a data frame with two columns, one containing the most
 probable words as character values, the second containing the weight assigned 
 to that word in the word weights vector you supplied.
 }
-

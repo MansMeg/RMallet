@@ -20,4 +20,3 @@ actual number of words of each topic in the documents.}
 This function returns a matrix with one row for every document and one 
 column for every topic.
 }
-

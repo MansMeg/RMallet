@@ -20,4 +20,3 @@ actual number of words of each type in the topics.}
 This function returns a matrix with one row for every topic 
 and one column for every word in the vocabulary.
 }
-

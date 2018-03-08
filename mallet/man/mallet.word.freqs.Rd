@@ -19,4 +19,3 @@ stopwords.
 \seealso{
 \code{\link{MalletLDA}}
 }
-

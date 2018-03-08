@@ -32,4 +32,3 @@ plot(mallet.topic.hclust(doc.topics, topic.words, 0.3), labels=topic.labels)
 This function uses data matrices from \code{\link{mallet.doc.topics}} 
 and \code{\link{mallet.topic.words}}
 }
-

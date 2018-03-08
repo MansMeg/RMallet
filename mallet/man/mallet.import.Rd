@@ -39,4 +39,3 @@ mallet.instances <-
 \seealso{
 \code{\link{mallet.word.freqs}} returns term and document frequencies, which may be useful in selecting stopwords.
 }
-
