@@ -81,3 +81,4 @@ load.mallet.state(topic.model = new.topic.model, state.file = state_file)
 
 doc.topics.counts[1:3, 1:10]
 mallet.doc.topics(new.topic.model, smoothed=FALSE, normalized=FALSE)[1:3, 1:10]
+
