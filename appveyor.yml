@@ -16,9 +16,12 @@ cache:
 # Adapt as necessary starting from here
 
 build_script:
+  - ps: dir
+  - ps: cd mallet
   - travis-tool.sh install_deps
 
 test_script:
+#  - ps: cd mallet
   - travis-tool.sh run_tests
 
 on_failure:
