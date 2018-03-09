@@ -15,9 +15,12 @@ cache:
 
 # Adapt as necessary starting from here
 
+
 build_script:
   - ps: dir
+  - ps: Copy-Item travis-tool.sh -destination mallet/travis-tool.sh
   - ps: cd mallet
+  - ps: dir 
   - travis-tool.sh install_deps
 
 test_script:
