@@ -16,6 +16,9 @@ apt_packages:
 # Be strict when checking our package
 warnings_are_errors: true
 
+r_packages:
+  - devtools
+
 r_github_packages:
   -  jimhester/covr
 
