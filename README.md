@@ -2,7 +2,7 @@ mallet
 ======
 
 [![Build Status](https://travis-ci.org/MansMeg/RMallet.svg?branch=master)](https://travis-ci.org/MansMeg/RMallet)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/<MansMeg/RMallet?branch=master&svg=true)](https://ci.appveyor.com/project/MansMeg/RMallet)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/MansMeg/RMallet?branch=master&svg=true)](https://ci.appveyor.com/project/MansMeg/RMallet)
 [![Coverage Status](https://coveralls.io/repos/MansMeg/RMallet/badge.svg)](https://coveralls.io/r/MansMeg/RMallet) [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/mallet)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/mallet)](http://cran.rstudio.com/web/packages/mallet)
 
