@@ -18,6 +18,7 @@ warnings_are_errors: true
 
 r_packages:
   - devtools
+  - rJava
 
 r_github_packages:
   -  jimhester/covr
