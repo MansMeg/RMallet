@@ -48,16 +48,12 @@ test_that(desc="load.mallet",{
 
   expect_silent(load.mallet.state(topic.model = new.topic.model, state.file = state_file))
   
-  file.remove(state_file)
-  expect_true(!file.exists(state_file))
-  
   new.doctopic.after.load <- mallet.doc.topics(new.topic.model, smoothed=FALSE, normalized=FALSE)
   new.topictype.after.load <- mallet.topic.words(new.topic.model, smoothed=FALSE, normalized=FALSE)
   new.doctopic.after.load.prior <- mallet.doc.topics(new.topic.model, smoothed=TRUE, normalized=FALSE)
   new.topictype.after.load.prior <- mallet.topic.words(new.topic.model, smoothed=TRUE, normalized=FALSE)
-
   
-  skip() # This is probably a bug in Mallet RTopicModel class
+
   if(FALSE){
   expect_equal(new.topictype.after.load, old.topictype)
   expect_equal(new.topictype.after.load.prior, old.topictype.prior)
