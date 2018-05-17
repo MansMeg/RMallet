@@ -27,7 +27,7 @@ build_script:
 #  - R -e "install.packages('rJava', repos = 'http://cran.us.r-project.org', INSTALL_opts='--no-multiarch')"
   - ps: dir
   - ps: Copy-Item mallet\* .
-  - ps: Remove-Item -Recurse -Force mallet\
+#  - ps: Remove-Item -Recurse -Force mallet\
 #  - ps: cd mallet
   - ps: dir 
   - travis-tool.sh install_deps
