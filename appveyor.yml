@@ -28,16 +28,13 @@ environment:
   R_BUILD_ARGS: --no-multiarch
   R_CHECK_ARGS: --no-multiarch
 
-# See https://stackoverflow.com/questions/29941797/onload-failed-in-loadnamespace-for-rjava-when-installing-a-package
 build_script:
 #  - R -e "install.packages('rJava', repos = 'http://cran.us.r-project.org', INSTALL_opts='--no-multiarch')"
   - ps: dir
   - ps: Copy-Item -Recurse mallet\* .
   - ps: Remove-Item -Recurse -Force mallet\
-#  - ps: cd R
-#  - ps: Get-Location
+  - ps: Remove-Item miktex-portable.exe 
   - ps: dir 
-#  - ps: cd ..
   - travis-tool.sh install_deps
 
 test_script:
