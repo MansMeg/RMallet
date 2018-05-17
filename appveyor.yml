@@ -28,19 +28,10 @@ build_script:
   - ps: dir
   - ps: Copy-Item -Recurse mallet\* .
   - ps: Remove-Item -Recurse -Force mallet\
-  - ps: cd R
-  - ps: Get-Location
+#  - ps: cd R
+#  - ps: Get-Location
   - ps: dir 
-  - ps: cd ..
-#  - ps: dir 
-#  - ps: cd ../inst
-#  - ps: dir 
-#  - ps: cd ../man
-#  - ps: dir 
-#  - ps: cd ../tests  
-#  - ps: dir 
 #  - ps: cd ..
-#  - ps: dir
   - travis-tool.sh install_deps
 
 test_script:
